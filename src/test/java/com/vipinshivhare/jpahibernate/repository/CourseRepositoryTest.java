@@ -12,6 +12,8 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 
+
+
 // Ideally when u r fetching the courses u should get the courseMaterial as well
 @SpringBootTest
 class CourseRepositoryTest {
@@ -25,7 +27,6 @@ class CourseRepositoryTest {
 
         System.out.println("Courses is : " + courses);
     }
-
     @Test
     public void saveCourseWithTeacher(){
         Teacher teacher = Teacher.builder()
@@ -44,7 +45,6 @@ class CourseRepositoryTest {
 
     }
 
-
     // Pagination
     @Test
     public void findAllPagination(){
@@ -59,6 +59,8 @@ class CourseRepositoryTest {
         System.out.println("Courses = : "+ courses);
 
     }
+
+
 
 
 

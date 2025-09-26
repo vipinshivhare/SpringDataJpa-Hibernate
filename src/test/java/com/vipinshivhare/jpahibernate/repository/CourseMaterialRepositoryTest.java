@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.stereotype.Repository;
 
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -39,6 +40,7 @@ class CourseMaterialRepositoryTest {
         repository.save(courseMaterial);
     }
 
+
     @Test
     public void printAllCoursesMaterials(){
         List<CourseMaterial> courseMaterials =
@@ -46,6 +48,7 @@ class CourseMaterialRepositoryTest {
 
         System.out.println("CourseMaterials = " + courseMaterials);
     }
+
 
 
 
